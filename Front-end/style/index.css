@@ -1,0 +1,412 @@
+* {
+    margin: 0; padding: 0;
+}
+
+
+
+
+/* ========= header ====== */
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    background-color: #080F17;
+    display: flex;
+    position: fixed;
+    z-index: 999;
+}
+
+header .header-logo a{
+    display: flex;
+}
+
+.header-logo span {
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    margin: 15px auto 0 15px; 
+}
+
+.header-logo img {
+    margin: 10px auto 15px 10px;
+}
+
+nav {
+    margin: 20px auto auto 60%;
+}
+
+.top-nav a{
+    color: white;
+    text-align: center;
+    margin: 0 16px 12px auto;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.top-nav a:hover {
+    padding-bottom: 7px; 
+    border-bottom: 3px solid #fcac45; 
+}
+
+.top-nav .icon {
+    display: none;
+}
+
+
+
+
+/* ======== main ============== */
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main .info {
+    display: flex;
+    text-align: justify;
+    height: auto;
+    padding-top: 20px;
+}
+
+.headers {
+    text-align: center;
+    padding: 20px 0 15px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    border-bottom: 3px solid #fcac45;
+}
+
+.div-headers {
+    padding-top: 40px;
+}
+
+
+
+
+
+/* ====== mainInfo =========== */
+.content {
+    background-color: #EDEEF0;
+    width: 90%;
+    margin: 50px auto auto;
+}
+
+.left-info img {
+    margin-left: 50%;
+}
+
+.right-info {
+    margin-left: 180px;
+}
+
+.right-info ul li {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px; 
+    margin-top: 10px;
+    margin-right: 40px;     
+}
+
+.right-info #knowledge {
+    margin-left: 50px; 
+}
+
+.mw-100 {
+    min-width: 70%;
+}
+
+
+
+
+/* ======== Hobbys ================ */
+.hobby {
+    display: inline-block;   
+    position: relative;
+    margin: 20px 26px; 
+}
+
+.aboutHobby {
+    display: none;
+}
+
+.hobby:hover .aboutHobby {
+    width: 330px;
+    display: block;
+    position: absolute;
+     left: 0; bottom: 0;
+    color: #fff;
+    padding: 10px;
+    background-color: rgba(0,0,0,.3);
+}
+
+.hobby span {
+    font-size: 14px; 
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+
+.hobby h6 {
+    font-size: 16px;
+}
+
+
+
+/* ========= feedback ============= */
+.comments p {
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    text-align: center;
+}
+
+.comments p span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form-group {
+    margin: 20px auto 5px 20px; 
+    font-size: 19px; 
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+
+.form-control {
+    width: 230px; height: 30px;
+    margin: 0 auto auto 10px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+.input-name {
+    margin-left: 10px;
+}
+
+.form-area {
+    width: 320px; height: 150px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+.form-check {
+    margin: 5px 0 10px 35px; 
+    font-size: 16px; 
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+}
+
+.check-input:hover {
+    cursor: pointer;
+}
+
+#btn {
+    margin: 0 auto 10px 35px;
+    width: 110px; height: 45px;
+    border-radius: 8px;
+    background-color: #007BFF; 
+    color: white;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background-color: #0069D9;
+    cursor: pointer;
+}
+
+
+
+
+/* =========== footer =============== */
+.footer-content {
+    background-color: #EDEEF0;
+    width: 90%;
+    margin: 50px auto auto auto;
+}
+
+
+.social-network {
+    margin: 0 42%;  
+}
+
+.social-network a {
+    margin: 20px 0 0 15px;
+}
+
+.social-network img {
+    width: 25px; height: 25px;
+}
+
+footer p {
+    margin: 15px 35%; 
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 19px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 660px) {
+    /* ========= menu ========= */
+    nav {
+       margin: 20px auto auto 26% !important;
+    }
+
+    header .top-nav.responsive {
+        height: 170px !important; 
+    }
+
+
+    /* ============= mainInfo ========= */
+    main .left-info img {
+        margin: 0 0 0 15% !important;
+    }
+
+    .right-info {
+        margin-left: 60px !important;
+    }
+
+    .right-info ul li {
+        font-size: 10px !important;
+    }
+
+    .mw-100 {
+        max-width: 100%;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+     main .left-info img {
+        margin: 0 15%;
+    }
+
+    /* ======== hobbys ========== */
+    .hobby-image {
+        margin: 0 5% !important;
+    }
+
+    /* ========== comments ======== */
+    .form-area {
+        width: 200px; height: 100px;
+        border-radius: 5px;
+        margin-left: 10px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .form-control {
+        width: 200px; height: 30px;
+    }
+
+    /*  ======== footer ======== */
+    footer p {
+        margin: 0;
+        text-align: center;
+    }
+    .social-network {
+        margin: 15px 20% !important; 
+        display: inline !important;
+    }   
+}
+
+
+
+
+@media screen and (max-width: 1241px) {
+    /* ========= menu ========= */
+    nav {
+       margin: 20px auto auto 13%;
+    }
+
+    .top-nav a {
+        display: none;
+    }
+    
+    .top-nav a.icon {
+        float: right;
+        margin-top: -17px;
+        display: block;
+        color: white;
+        font-size: 25px; 
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .top-nav.responsive {
+        position: relative;
+        top: 50px; left: -200px;
+    }
+
+    header .top-nav.responsive {
+        height: 145px; 
+    }
+
+    .top-nav.responsive a.icon {
+        position: absolute;
+        top: -50px; right: -200px;
+    }
+
+    .top-nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+     main .left-info img {
+        margin-left: 25%;
+    }
+
+
+    /* ===== info ======= */
+    main .div-headers {
+        padding-top: 25px;
+    }
+
+    .right-info ul li {
+        font-size: 14px !important;
+    }
+
+    .right-info {
+        margin-left: 110px;
+    }
+
+
+    /* ====== hobbys ========== */
+    .hobby {
+        margin: 20px 0 10px 55px;
+    }
+    .hobby-image {
+        margin: 0 45%;
+    }
+
+    .mw-100 {
+        max-width: 75%;
+    }
+
+    /* ======= footer ====== */
+    footer p {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .social-network {
+        margin: 15px 40%;
+        display: inline !important;
+    } 
+}
